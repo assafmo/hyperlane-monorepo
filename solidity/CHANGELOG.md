@@ -1,5 +1,15 @@
 # @hyperlane-xyz/core
 
+## 3.17.0
+
+### Minor Changes
+
+- 44cc9bf6b: Add CLI command to support AVS validator status check
+
+### Patch Changes
+
+- @hyperlane-xyz/utils@3.17.0
+
 ## 3.16.0
 
 ### Patch Changes

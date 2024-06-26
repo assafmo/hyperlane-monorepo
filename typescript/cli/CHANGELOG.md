@@ -1,5 +1,17 @@
 # @hyperlane-xyz/cli
 
+## 3.17.0
+
+### Minor Changes
+
+- 44cc9bf6b: Add CLI command to support AVS validator status check
+- 6398aab72: Upgrade registry to 2.1.1
+
+### Patch Changes
+
+- @hyperlane-xyz/sdk@3.17.0
+- @hyperlane-xyz/utils@3.17.0
+
 ## 3.16.0
 
 ### Patch Changes
