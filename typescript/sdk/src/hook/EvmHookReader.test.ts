@@ -186,7 +186,7 @@ describe('EvmHookReader', () => {
     expect(config).to.deep.equal(hookConfig);
   });
 
-  it('should return an empty config if deriving fails', async () => {
+  it('should throw if deriving fails', async () => {
     const mockAddress = generateRandomAddress();
     const mockOwner = generateRandomAddress();
 
@@ -204,7 +204,9 @@ describe('EvmHookReader', () => {
 
     // top-level method infers hook type
     const hookConfig = await evmHookReader.deriveHookConfig(mockAddress);
-    expect(hookConfig).to.be.undefined;
+    expect(hookConfig).to.throw(
+      `Failed to derive undefined hook (${mockAddress}): TypeError: hook.hookType is not a function`,
+    );
   });
 
   /*
